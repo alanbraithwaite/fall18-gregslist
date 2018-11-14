@@ -14,7 +14,7 @@
   <div id="app">
     <div class="categories">
       <button class="btn btn-primary" onclick="app.controllers.autosController.showAutos()">Autos</button>
-      <button class="btn btn-primary">Real Estate</button>
+      <button class="btn btn-primary" onclick="app.controllers.realestateController.showRealestate()">Real Estate</button>
       <button class="btn btn-primary">Jobs</button>
     </div>
 
@@ -38,7 +38,7 @@
         <input type="number" name="year" />
       </div>
       <div class="form-group">
-        <label for="miles">Mile:</label>
+        <label for="miles">Miles:</label>
         <input type="number" name="miles" />
       </div>
       <div class="form-group">
@@ -56,6 +56,38 @@
       <button type="submit">Add Auto</button>
     </form>
 
+
+    <form onsubmit="app.controllers.realestateController.addRealestate(event)">
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" name="location" />
+      </div>
+      <div class="form-group">
+        <label for="bedrooms">Bedrooms:</label>
+        <input type="text" name="bedrooms" />
+      </div>
+      <div class="form-group">
+        <label for="sqrfootage">Sqrfootage:</label>
+        <input type="number" name="sqrfootage" />
+      </div>
+      <div class="form-group">
+        <label for="acres">Acres:</label>
+        <input type="number" name="acres" />
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" name="price" />
+      </div>
+      <div class="form-group">
+        <label for="img">Image:</label>
+        <input type="url" name="img" />
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea type="text" name="description"></textarea>
+      </div>
+      <button type="submit">Add Home</button>
+    </form>
 
   </div>
 
